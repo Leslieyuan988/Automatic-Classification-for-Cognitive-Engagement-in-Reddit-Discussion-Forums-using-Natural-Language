@@ -1,7 +1,8 @@
 # Topic Modeling with Latent Dirichlet Allocation (LDA)
 
-Designed a recommendation engine based on similar topics according to the Reddit corpus.
+Designed a subreddit recommendation engine based on similar topics according to Reddit documents.
 
-Dataset is collected from Open Source Reddit API.
-- data_preparation.ipynb build a structured data in numeric form based on messy unstructured text data from reddit, ensuring the data are prepared for preprocessing.
+Dataset is collected from Open Source Reddit API: https://www.reddit.com/dev/api/.
+- data_collection.ipynb describe a simple data pipeline that collect essential data and store them in PostgreSQL.
+- data_preparation.ipynb assesses and validate assumptions using EDA, ensuring data are prepared for modeling.
 - topic_modeling.ipynb extract latent features of reddit transcript using LDA and map them to the most similar subreddits.
